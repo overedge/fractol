@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   draw.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/07/13 16:48:39 by nahmed-m          #+#    #+#             */
+/*   Updated: 2016/07/13 16:50:04 by nahmed-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 void	mlx_put_pixel_image(t_env *e, int x, int y, int color)
@@ -13,8 +25,7 @@ void	mlx_put_pixel_image(t_env *e, int x, int y, int color)
 	*y_pos = (color >> 16);
 }
 
-
-void draw_burn(t_env *e)
+void	draw_burn(t_env *e)
 {
 	int			x;
 	int			y;
@@ -43,7 +54,7 @@ void draw_burn(t_env *e)
 	}
 }
 
-void draw_julia(t_env *e)
+void	draw_julia(t_env *e)
 {
 	int			x;
 	int			y;
@@ -70,7 +81,7 @@ void draw_julia(t_env *e)
 	}
 }
 
-void draw_mandel(t_env *e)
+void	draw_mandel(t_env *e)
 {
 	int			x;
 	int			y;
@@ -105,7 +116,6 @@ void	draw(t_env *e)
 
 	img.ptr = mlx_new_image(e->mlx, W_WIDTH, W_HEIGHT);
 	img.data = mlx_get_data_addr(img.ptr, &img.bpp, &img.size_line, &img.edian);
-
 	e->img = img;
 	if (e->choose == 1)
 		draw_julia(e);

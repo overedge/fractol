@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   input2.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/07/13 16:50:27 by nahmed-m          #+#    #+#             */
+/*   Updated: 2016/07/13 17:05:33 by nahmed-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 int		input_key2(int keycode, void *env, t_env *tmp)
@@ -6,7 +18,7 @@ int		input_key2(int keycode, void *env, t_env *tmp)
 		tmp->f.x1 += (0.999999 / tmp->f.zoom) * 20;
 	else if (keycode == RIGHT)
 		tmp->f.x1 -= (0.999999 / tmp->f.zoom) * 20;
-	else if (keycode == DEZOOM  && tmp->f.zoom > 50)
+	else if (keycode == DEZOOM && tmp->f.zoom > 50)
 		tmp->f.zoom -= 50;
 	else if (keycode == ZOOM)
 		tmp->f.zoom += 50;
@@ -26,13 +38,12 @@ int		input_key2(int keycode, void *env, t_env *tmp)
 	return (input_key3(keycode, env, tmp));
 }
 
-
 int		input_key3(int keycode, void *env, t_env *tmp)
 {
 	void	*img_clean;
 
 	if (keycode == LOCK)
-		tmp->lock == 1 ? (tmp->lock = 0) : (tmp->lock = 1);
+		tmp->lock = tmp->lock == 1 ? 0 : 1;
 	else if (keycode == RINI)
 	{
 		tmp->lock = 0;

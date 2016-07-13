@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/07/13 16:58:03 by nahmed-m          #+#    #+#             */
+/*   Updated: 2016/07/13 16:58:13 by nahmed-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 void		init_fract(t_env *e)
@@ -22,7 +34,7 @@ void		init_fract(t_env *e)
 	}
 }
 
-void init(t_env *env)
+void		init(t_env *env)
 {
 	env->mlx = mlx_init();
 	env->win = mlx_new_window(env->mlx, W_WIDTH, W_HEIGHT, "fractol");

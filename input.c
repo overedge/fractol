@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   input.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/07/13 16:47:02 by nahmed-m          #+#    #+#             */
+/*   Updated: 2016/07/13 16:48:21 by nahmed-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
 int		input_expose(void *env)
@@ -49,7 +61,7 @@ int		input_mouse(int button, int x, int y, void *env)
 	x += 10;
 	y += 10;
 	tmp = env;
-	if (button == MDEZOOM  && tmp->f.zoom > 50)
+	if (button == MDEZOOM && tmp->f.zoom > 50)
 		tmp->f.zoom -= 50;
 	else if (button == MZOOM)
 		tmp->f.zoom += 50;
@@ -61,9 +73,10 @@ int		input_mouse(int button, int x, int y, void *env)
 
 int		mouse_motion_hook(int x, int y, void *env)
 {
-	t_env	*tmp = env;
+	t_env	*tmp;
 	void	*img_clean;
 
+	tmp = env;
 	if (tmp->choose == 1 && tmp->lock == 1 && x <= W_WIDTH && x >= 0
 	&& y <= W_HEIGHT && y >= 0)
 	{

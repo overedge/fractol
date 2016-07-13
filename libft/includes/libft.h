@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 15:45:30 by nahmed-m          #+#    #+#             */
-/*   Updated: 2016/04/03 01:26:26 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2016/07/13 16:57:33 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 ** Increase It ! For Big File !
 */
 # define BUFF_SIZE 4096
-# define ft_clearscreen() ft_printf("\033[H\033[2J")
+
 typedef struct	s_list
 {
 	void			*content;
