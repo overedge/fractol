@@ -1,5 +1,7 @@
-# FDF
-![Image of Screen](https://github.com/overedge/FDF/blob/master/screen.png?raw=true)
+# fractol
+![Image of Screen](https://github.com/overedge/fractol/blob/master/screen.png?raw=true)
+![Image of Screen](https://github.com/overedge/fractol/blob/master/screen1.png?raw=true)
+![Image of Screen](https://github.com/overedge/fractol/blob/master/screen2.png?raw=true)
 
 # Tested for mac user (El capitan realease)
 
