@@ -20,7 +20,11 @@ $ ./fractol <name_of_fractal> julia, mandelbrot, burningship
 ### Commands
 | Usage       | Commands |
 | ------------- | ------------- |
-| O/L  | ZOOM KEYBOARD  |
+| LOCK MOUSE  | X|
+| RESET  | R |
+| COLOR  | C  |
+| ZOOM KEYBOARD |  O/L  |
+| ITTERATION INCREASE  |  I/K |
 | CHANGE FRACTALS  | ENTER  |
 | MOVE  | ARROW ← ↑ →  |
 
