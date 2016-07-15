@@ -29,5 +29,5 @@ $ ./fractol <name_of_fractal> julia, mandelbrot, burningship
 | MOVE  | ARROW ← ↑ →  |
 
 ### Result
-![Image of Result](https://github.com/overedge/FDF/blob/master/result.png?raw=true)
+![Image of Result](https://github.com/overedge/fractol/blob/master/result.png?raw=true)
 
